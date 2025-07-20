@@ -1,2 +1,0 @@
-[console_scripts]
-agileee-app = agileee.main:main
