@@ -519,3 +519,9 @@ NameError: name 'st' is not defined
 2025-07-10 19:15:10,721 - ERROR - SHAP calculation failed: index 71 is out of bounds for axis 1 with size 71
 2025-07-10 19:29:26,597 - ERROR - SHAP value calculation failed: "['external_eef_organisation_type_banking_insurance_stock', 'external_eef_organisation_type_banking', 'external_eef_organisation_type_communications', 'external_eef_organisation_type_education_institution', 'external_eef_organisation_type_financial_banking_insurance_stock', 'external_eef_organisation_type_financial_property_and_business_services', 'external_eef_organisation_type_government', 'external_eef_organisation_type_medical_and_health_care', 'external_eef_organisation_type_transport_and_storage', 'external_eef_organisation_type_wholesale_and_retail_trade'] not in index"
 2025-07-12 11:21:48,538 - ERROR - Prediction failed: ufunc 'add' did not contain a loop with signature matching types (dtype('int64'), dtype('<U5')) -> None
+2025-07-20 16:46:18,960 - ERROR - Import error: No module named 'shap'
+2025-07-20 16:46:34,599 - ERROR - Import error: No module named 'shap'
+2025-07-20 16:49:20,781 - ERROR - Import error: No module named 'shap'
+2025-07-20 16:51:41,697 - ERROR - Failed to load model top_model_1_GradientBoostingRegressor with all methods
+2025-07-20 16:51:41,698 - ERROR - Failed to load model: top_model_1_GradientBoostingRegressor
+2025-07-20 16:51:41,720 - ERROR - Failed to load model top_model_1_GradientBoostingRegressor with all methods

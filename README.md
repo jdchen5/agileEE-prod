@@ -21,6 +21,7 @@ This Streamlit application uses machine learning to provide **early effort estim
 
 ## 📁 Folder Structure
 agileee_app/
+├── streamlit_app.py        # Streamlit Community Cloud Launcher
 ├── agilee
 |   ├── main.py             # Entry point of the Streamlit app
 |   ├──  models.py          # Model creation, loading.prediction logic
