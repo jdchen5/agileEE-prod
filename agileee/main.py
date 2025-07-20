@@ -36,7 +36,7 @@ def main():
     """Main entry point - delegates to ui.py main function"""
     try:
         # Import and call the main function from ui.py
-        from agileee.ui import main as ui_main
+        from ui import main as ui_main
         ui_main()
         
     except ImportError as e:
