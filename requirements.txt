@@ -1,4 +1,4 @@
-# Core data science stack
+# Core Streamlit and ML stack
 streamlit>=1.28.0
 numpy>=1.24.0
 pandas>=2.0.0
@@ -6,17 +6,21 @@ matplotlib>=3.7.0
 plotly>=5.15.0
 seaborn>=0.12.0
 
-
 # Data manipulation and analysis
 openpyxl>=3.1.0
 
 # Machine learning
 joblib>=1.3.0
-scikit-learn>=1.4.0  # Required by pycaret 3.3.2
+scikit-learn>=1.4.0
 
-# AutoML
+# AutoML - Pin specific version for stability
 pycaret==3.3.2
+
+# Configuration handling
 pyyaml>=6.0
 
-#Shap Analysis
-#shap>=0.47.0
+# SHAP Analysis (optional - comment out if causing issues)
+# shap>=0.47.0
+
+# Additional dependencies for Hugging Face
+streamlit-option-menu>=0.3.6

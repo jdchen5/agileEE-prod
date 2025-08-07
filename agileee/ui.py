@@ -862,7 +862,20 @@ def display_static_shap_analysis():
 
     # Section 1: Gradient Boosting Regressor
     st.subheader("Model 1: Gradient Boosting Regressor")
-    st.image("plots/shap_summary_GradientBoostingRegressor.png", caption="Gradient Boosting Regressor SHAP Summary")
+    
+    # Try to load image with error handling
+    try:
+        import os
+        image_path = "plots/shap_summary_GradientBoostingRegressor.png"
+        if os.path.exists(image_path):
+            st.image(image_path, caption="Gradient Boosting Regressor SHAP Summary")
+        else:
+            st.warning(f"Image not found: {image_path}")
+            st.info("SHAP visualization temporarily unavailable")
+    except Exception as e:
+        st.error(f"Error loading image: {str(e)}")
+        st.info("SHAP visualization temporarily unavailable")
+    
     st.markdown("""
     ### What this shows  
     This SHAP summary plot visualizes which features most influence the predictions of the Gradient Boosting Regressor model. Each dot represents a project example, colored by feature value (red = high, blue = low). The x-axis position (SHAP value) indicates the magnitude and direction of the feature’s impact on predicted project effort.
@@ -880,7 +893,19 @@ def display_static_shap_analysis():
 
     # Section 2: LightGBM
     st.subheader("Model 2: Light Gradient Boosting Machine Regressor")
-    st.image("plots/shap_summary_LGBMRegressor.png", caption="LightGBM Regressor SHAP Summary")
+    
+    try:
+        image_path = "plots/shap_summary_LGBMRegressor.png"
+        if os.path.exists(image_path):
+            st.image(image_path, caption="LightGBM Regressor SHAP Summary")
+        else:
+            st.warning(f"Image not found: {image_path}")
+            st.info("SHAP visualization temporarily unavailable")
+    except Exception as e:
+        st.error(f"Error loading image: {str(e)}")
+        st.info("SHAP visualization temporarily unavailable")
+    
+
     st.markdown("""
     ### What this shows  
     This SHAP summary plot ranks features by their overall importance in the LightGBM Regressor model’s predictions. Each dot represents a project instance, colored by feature value (red = high, blue = low). The x-axis (SHAP value) shows the impact and direction of the feature on the model’s output.
@@ -897,7 +922,19 @@ def display_static_shap_analysis():
 
     # Section 3: Bayesian Ridge
     st.subheader("Model 3: Bayesian Ridge Regressor")
-    st.image("plots/shap_summary_BayesianRidge.png", caption="Bayesian Ridge Regressor SHAP Summary")
+    
+    try:
+        image_path = "plots/shap_summary_BayesianRidge.png"
+        if os.path.exists(image_path):
+            st.image(image_path, caption="Bayesian Ridge Regressor SHAP Summary")
+        else:
+            st.warning(f"Image not found: {image_path}")
+            st.info("SHAP visualization temporarily unavailable")
+    except Exception as e:
+        st.error(f"Error loading image: {str(e)}")
+        st.info("SHAP visualization temporarily unavailable")
+    
+
     st.markdown("""
     ### What this shows  
     This SHAP summary plot displays the most influential features in the predictions made by the Bayesian Ridge Regressor. Each point represents a project example, with color indicating the value of the feature (red = high, blue = low). The x-axis shows how much each feature pushes the prediction higher or lower (the SHAP value).

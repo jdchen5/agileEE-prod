@@ -1,35 +1,48 @@
-# Ignore Python bytecode files
-
-# Ignore Python cache
+# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Ignore virtual environment
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
 venv/
+ENV/
+env.bak/
+venv.bak/
 
 # Ignore all pickle files in any folder
 *.pkl
 
-# Ignore VS Code settings (optional)
-.vscode/
-
-# Ignore Streamlit temporary files
+# Streamlit
 .streamlit/
 
-# Ignore log files
-*.log
-logs.log
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Ignore environment files
-.env
-.env.local
-.env.production
-
-# Ignore OS generated files
+# OS
 .DS_Store
 Thumbs.db
 
-# Ignore Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# Logs
+*.log
+logs/
+app.log
+
+# Large model files (if too big for git)
+# models/*.pkl
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment variables
+.env
+.env.local
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
